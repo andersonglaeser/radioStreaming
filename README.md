@@ -1,6 +1,5 @@
 # radioStreaming
-Player project for radio streaming. Using:
-
-- React hooks
-- Styled Components
+Player project for radio streaming in React Native. Using:
+- React Hooks
+- Styled Component
 - React Navigation
