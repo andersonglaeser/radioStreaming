@@ -1,2 +1,6 @@
 # radioStreaming
-Player project for radio streaming. Using react hooks, styled components and react navigation.
+Player project for radio streaming. Using:
+
+- React hooks
+- Styled Components
+- React Navigation
