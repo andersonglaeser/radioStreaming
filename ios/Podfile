@@ -1,5 +1,4 @@
 platform :ios, '9.0'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'radioStreaming' do
   # Pods for radioStreaming
@@ -28,20 +27,14 @@ target 'radioStreaming' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'radioStreamingTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+  pod 'react-native-slider', :path => '../node_modules/@react-native-community/slider'
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  pod 'react-native-video', :path => '../node_modules/react-native-video/react-native-video.podspec'
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler/RNGestureHandler.podspec'
 
-  use_native_modules!
 end
 
-target 'radioStreaming-tvOS' do
-  # Pods for radioStreaming-tvOS
-
-  target 'radioStreaming-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'radioStreamingTests' do
 
 end
